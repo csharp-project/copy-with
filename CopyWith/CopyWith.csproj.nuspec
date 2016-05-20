@@ -2,19 +2,19 @@
 <package >
   <metadata>
     <id>CopyWith</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>wk</authors>
     <owners>wk</owners>
     <licenseUrl>https://github.com/wk-j/copy-with.git</licenseUrl>
     <projectUrl>https://github.com/wk-j/copy-with.git</projectUrl>
     <iconUrl>https://github.com/wk-j/copy-with.git</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Clone and update object with "With"</description>
+    <description>Clone and update object with fluent api.</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>C#, .Net, Clone </tags>
   </metadata>
 <files>
-  <file src="bin/Release/CopyWith.dll" target="net45" />
+  <file src="bin/Release/CopyWith.dll" target="lib/net45" />
 </files>
 </package>
