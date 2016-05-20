@@ -2,6 +2,7 @@
 
 using System;
 using NUnit.Framework;
+using CopyWith;
 
 namespace CopyAndUpdate.Tests
 {
@@ -10,14 +11,6 @@ namespace CopyAndUpdate.Tests
 		public string B { set; get; }
 		public object Clone () {
 			return this.MemberwiseClone ();
-		}
-	}
-
-	public static class Extensions {
-		public static T With<T> (this T data, Action<T> md) where T : ICloneable {
-			var newData = (T)data.Clone ();
-			md (newData);
-			return newData;
 		}
 	}
 

@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{98186650-7AE9-4178-A1A5-EAE86579A372}</ProjectGuid>
+    <ProjectGuid>{48C2E9E9-82BF-417F-B54B-18071C0D2F58}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>CopyAndUpdate.Tests</RootNamespace>
-    <AssemblyName>CopyAndUpdate.Tests</AssemblyName>
+    <RootNamespace>CopyWith</RootNamespace>
+    <AssemblyName>CopyWith</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -28,26 +28,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.3.2.1\lib\net45\nunit.framework.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CopyAndUpdate\CopyAndUpdate.fsproj">
-      <Project>{EB1BDA5B-AA64-4768-8E32-65761B98FE74}</Project>
-      <Name>CopyAndUpdate</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CopyWith\CopyWith.csproj">
-      <Project>{48C2E9E9-82BF-417F-B54B-18071C0D2F58}</Project>
-      <Name>CopyWith</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
